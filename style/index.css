@@ -12,13 +12,51 @@
     /* Typography */
     --ff-primary: 'Montserrat', sans-serif;
     --ff-secondary: 'Fraunces', sans-serif;
-    --fs-200: .75rem;
-    --fs-300: .875rem;
+    --fs-100: .75rem;
+    --fs-200: .875rem;
     --fs-700: 2rem;
     --fw-500: 500;
     --fw-700: 700;
 }
 
-h2 {
-    line-height: 2;
+body {
+    background: var(--clr-primary-100);
+    color: var(--clr-neutral-700);
+    display: grid;
+    place-content: center;
+    font-family: var(--ff-primary);
+}
+
+.product-card {
+    display: grid;
+    max-width: 25rem;
+    background: var(--clr-neutral-100);
+}
+
+.product-card__content {
+    padding: clamp(0.75rem, 0.3099rem + 1.8779vw, 2rem);
+}
+
+.product-card__category {
+    font-size: var(--fs-100);
+    letter-spacing: .3125rem;
+}
+
+.product-card__heading {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    line-height: 2rem;
+    color: var(--clr-neutral-900);
+    margin-block-start: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+}
+
+.product-card__description {
+    margin-block-start: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+    line-height: 1.4375rem;
+}
+
+.product-card__price-wrapper {
+    display: flex;
+    gap: 1.1875rem;
 }
