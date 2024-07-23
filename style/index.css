@@ -40,6 +40,7 @@ body {
 .product-card__category {
     font-size: var(--fs-100);
     letter-spacing: .3125rem;
+    text-transform: uppercase;
 }
 
 .product-card__heading {
