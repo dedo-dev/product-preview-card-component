@@ -22,14 +22,19 @@
 body {
     background: var(--clr-primary-100);
     color: var(--clr-neutral-700);
-    display: grid;
-    place-content: center;
+    /* display: grid;
+    place-content: center; */
     font-family: var(--ff-primary);
+}
+
+main {
+    container: card / inline-size;
 }
 
 .product-card {
     display: grid;
-    max-width: 25rem;
+    max-width: 37.5rem;
+    margin-inline: auto;
     background: var(--clr-neutral-100);
 }
 
@@ -103,4 +108,10 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@container card (inline-size > 56.25em) {
+    .product-card {
+        grid-template-columns: 1fr 1fr;
+    }
 }
