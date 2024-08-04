@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/product-card-using-css-grid-and-fluid-spacing-bNsy9BR4pt)
 - Live Site URL: [dz-product-preview-card-component](https://dz-product-preview-card-component.vercel.app/)
 
 ## My process
