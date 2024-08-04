@@ -25,23 +25,9 @@ main {
 }
 
 
-/* img {
+.product-card__img {
     height: 100%;
-    object-position: ;
-    object-fit: cover;
-} */
-
-/* picture img {
-    height: 100%;
-    object-position: ;
-    object-fit: cover;
-} */
-
-/* .product-card picture img {
-    height: 100%;
-    object-position: ;
-    object-fit: fill;
-} */
+}
 
 .product-card__content {
     padding: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
@@ -85,7 +71,6 @@ main {
     font-size: .8125rem;
     font-family: var(--ff-primary);
     color: var(--clr-neutral-700);
-    text-decoration: line-through;
 }
 
 .product-card__btn {
