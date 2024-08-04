@@ -1,6 +1,67 @@
-@import url(/style/reset.css);
 @import url(/style/variables.css);
+/* ------ CSS RESET ------ */
+/* Full CSS Reset https://piccalil.li/blog/a-more-modern-css-reset/ by Andy Bell */
 
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, p {
+    margin: 0;
+}
+
+  /* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Balance text wrapping on headings */
+h2 {
+    text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* ------ CUSTOM PROPERTIES ------ */
+:root {
+    /* Colors */
+    --clr-primary-100: hsl(30, 38%, 92%);
+    --clr-primary-500: hsl(158, 36%, 37%);
+    --clr-primary-900: hsl(157, 43%, 18%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-700: hsl(228, 12%, 48%);
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    /* Typography */
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Fraunces', sans-serif;
+    --fs-100: .75rem;
+    --fs-200: .875rem;
+    --fs-700: 2rem;
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+/* ------ LAYOUT ------ */
 body {
     background: var(--clr-primary-100);
     color: var(--clr-neutral-700);
